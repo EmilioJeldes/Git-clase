@@ -16,8 +16,17 @@ git status
 # agregar archivo al repositorio (git add . )(con un punto agrega todos los archivos)
 git add README.md
 
-# remover archivo agregago don git add
+# remover archivo agregago con git add
 git rm --cached README.md
 
 # hacer un commit (guardar los cambios de manera local)(-m 'comentario')
-git commit
+git commit -m 'comentario'
+
+# Muestra los branches
+git branch
+
+# cambiar de rama (branch)
+git checkout nombrerama
+
+# Crear rama (branch) -b (crear rama)
+git chechout -b nombreramanueva
