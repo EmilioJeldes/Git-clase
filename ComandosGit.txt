@@ -1,0 +1,20 @@
+# Inicializar repo git
+git init
+
+# Ver repositorios remotos (internet como github)
+git remote -v
+
+# agregar 
+git remote add origin https://github.com/EmilioJeldes/test.git
+
+# touch para crear archivo o crear a mano
+touch README.md
+
+# status del repositorio
+git status
+
+# agregar archivo al repositorio (git add . )(con un punto agrega todos los archivos)
+git add README.md
+
+# remover archivo agregago don git add
+git rm --cached README.md
