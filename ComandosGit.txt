@@ -18,3 +18,6 @@ git add README.md
 
 # remover archivo agregago don git add
 git rm --cached README.md
+
+# hacer un commit (guardar los cambios de manera local)(-m 'comentario')
+git commit
