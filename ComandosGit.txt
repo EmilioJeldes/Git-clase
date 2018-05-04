@@ -4,7 +4,7 @@ git init
 # Ver repositorios remotos (internet como github)
 git remote -v
 
-# agregar 
+# agregar repositorios remotos
 git remote add origin https://github.com/EmilioJeldes/test.git
 
 # touch para crear archivo o crear a mano
@@ -16,17 +16,20 @@ git status
 # agregar archivo al repositorio (git add . )(con un punto agrega todos los archivos)
 git add README.md
 
-# remover archivo agregago con git add
+# remover archivo agregado con git add
 git rm --cached README.md
 
 # hacer un commit (guardar los cambios de manera local)(-m 'comentario')
 git commit -m 'comentario'
 
-# Muestra los branches
+# Muestra los branches o ramas
 git branch
 
 # cambiar de rama (branch)
-git checkout nombrerama
+git checkout nombreRama
 
-# Crear rama (branch) -b (crear rama)
-git chechout -b nombreramanueva
+# Crear rama (branch) (-b para crearla crear rama)
+git chechout -b nombreRamaNueva
+
+# Eliminar branch -d o -D para forzarlo en caso de conflicto
+git branch -d nombredelbranch
