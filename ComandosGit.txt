@@ -5,7 +5,7 @@ git init
 git remote -v
 
 # agregar repositorios remotos
-git remote add origin https://github.com/EmilioJeldes/test.git
+git remote add origin url_repositorio_github
 
 # touch para crear archivo o crear a mano
 touch README.md
@@ -30,6 +30,13 @@ git checkout nombreRama
 
 # Crear rama (branch) (-b para crearla crear rama)
 git chechout -b nombreRamaNueva
+
+# Fusionar una rama con otra
+git merge nombreRama
+
+# Ejemplo merge rama "master" con "cualquierwea"
+git checkout master              // cambia a master
+git merge cualquierwea					 // fusiona "cualquierwea" a master
 
 # Eliminar branch -d o -D para forzarlo en caso de conflicto
 git branch -d nombredelbranch
