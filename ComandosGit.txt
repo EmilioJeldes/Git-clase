@@ -30,6 +30,7 @@ git checkout nombreRama
 
 # Crear rama (branch) (-b para crearla crear rama)
 git chechout -b nombreRamaNueva
+git branch nombreRamaNueva
 
 # Fusionar una rama con otra
 git merge nombreRama
@@ -40,3 +41,35 @@ git merge cualquierwea					 // fusiona "cualquierwea" a master
 
 # Eliminar branch -d o -D para forzarlo en caso de conflicto
 git branch -d nombredelbranch
+
+# Subir proyecto a una cuenta github <origin: remote, a donde subirlo> <master: branch> 
+# git push <origin *(a)> <nombreBranchLocal:nombreBranchRemota *(b)>
+# a. Repositorio remoto. No confundir con las branches remotas. El repositorio contempla todas las branches remotas
+# b. Aca se especifica la branch local y la remota. Desde donde viene el commit a ser pusheado y hacia que branch remota apunta. Si el nombre es el mismo, entonces se puede omitir la branch remota ya que se asume que son iguales. EN CASO CONTRARIO, DEBE SER ESPECIFICADO "feature123:development" o "development:master"
+git push origin master
+
+###### Segunda parte
+# Traer los cambios del repositorio remoto
+git pull origin master
+
+#Traer un branch remoto especifico ej: git pull development
+git pull <nombre_branch>
+
+## GitFlow
+Master
+	->
+	->
+	->
+	Develop
+		->
+		->
+		->
+		-> Feature/123
+				->
+				->
+		<-
+<-
+118 241 590 781 965 880 408
+
+
+
