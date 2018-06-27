@@ -47,6 +47,7 @@ git branch -d nombredelbranch
 # a. Repositorio remoto. No confundir con las branches remotas. El repositorio contempla todas las branches remotas
 # b. Aca se especifica la branch local y la remota. Desde donde viene el commit a ser pusheado y hacia que branch remota apunta. Si el nombre es el mismo, entonces se puede omitir la branch remota ya que se asume que son iguales. EN CASO CONTRARIO, DEBE SER ESPECIFICADO "feature123:development" o "development:master"
 git push origin master
+git push origin localBranchName:remoteBranchName
 
 ###### Segunda parte
 # Traer los cambios del repositorio remoto
